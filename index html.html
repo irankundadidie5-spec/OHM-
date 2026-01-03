@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>OHM – Plateforme Digitale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* =========================
+   RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  background: linear-gradient(135deg, #0b1c2d, #102a44);
+  color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 34px;
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+}
+
+header p {
+  font-size: 14px;
+  color: #cfd8dc;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4da3ff;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-size: 28px;
+  color: #0a58ca;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero p {
+  max-width: 750px;
+  margin: 15px auto 25px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #0a58ca, #1e88e5);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #084298, #1565c0);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   SERVICES GRID
+========================= */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #0a58ca;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* =========================
+   WALI ID SECTION
+========================= */
+.waliid {
+  background: #eef3f9;
+  border-left: 6px solid #0a58ca;
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+
+.waliid ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.waliid li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+#contact p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#contact strong {
+  color: #0a58ca;
+  font-size: 18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #0b1c2d;
+  color: #cfd8dc;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+
+footer strong {
+  color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  section {
+    padding: 45px 15px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>OHM</h1>
+  <p>Plateforme Digitale Innovante</p>
+
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#waliid">Wali ID</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+}on class="hero">
+  <h2>Une plateforme numérique pour l’Afrique moderne</h2>
+  <p>
+    OHM est une plateforme digitale qui regroupe des services innovants
+    destinés à faciliter l’identification numérique, la communication
+    et les services digitaux sécurisés.
+  </p>
+
+  <a href="#waliid" class="btn">Découvrir Wali ID</a>
+</section>
+
+<section id="services">
+  <h2>Nos Services</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>Identité Numérique</h3>
+      <p>
+        Gestion d’identité numérique sécurisée pour les utilisateurs
+        et les organisations.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Messagerie Sécurisée</h3>
+      <p>
+        Communication fiable intégrée à l’identité numérique.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Paiement Digital</h3>
+      <p>
+        Solutions de paiement électronique locales (en développement).
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Gestion & Services</h3>
+      <p>
+        Connexion entre utilisateurs, services et entreprises.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="waliid" class="waliid">
+  <h2>Wali ID – Le cœur de OHM</h2>
+  <p>
+    Wali ID est un service intégré dans la plateforme OHM.
+    Il permet à chaque utilisateur de disposer d’une identité numérique unique
+    pour accéder aux services, communiquer et effectuer des opérations digitales.
+  </p>
+
+  <ul>
+    <li>Compte utilisateur unique</li>
+    <li>Identification numérique sécurisée</li>
+    <li>Messagerie intégrée</li>
+    <li>Base des futurs services de paiement</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    Vous êtes intéressé par OHM ou Wali ID ?
+    Contactez-nous pour collaboration, intégration ou partenariat.
+  </p>
+
+  <p>
+    📞 Téléphone / WhatsApp :
+    <strong>+213 795 211 606</strong>
+  </p>
+
+  <a class="btn" href="https://wa.me/213795211606" target="_blank">
+    Nous contacter sur WhatsApp
+  </a>
+</section>
+
+<footer>
+  <p>
+    © 2026 <strong>OHM</strong> – Plateforme Digitale<br>
+    Tous droits réservés
+  </p>
+</footer>
+
+</body>
+</html>
+<header class="header">
+  <div class="logo-container">
+    <img src="logo-ohm.pn/* =========================
+   RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  background: linear-gradient(135deg, #0b1c2d, #102a44);
+  color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 34px;
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+}
+
+header p {
+  font-size: 14px;
+  color: #cfd8dc;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4da3ff;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-size: 28px;
+  color: #0a58ca;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero p {
+  max-width: 750px;
+  margin: 15px auto 25px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #0a58ca, #1e88e5);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #084298, #1565c0);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   SERVICES GRID
+========================= */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #0a58ca;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* =========================
+   WALI ID SECTION
+========================= */
+.waliid {
+  background: #eef3f9;
+  border-left: 6px solid #0a58ca;
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+
+.waliid ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.waliid li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+#contact p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#contact strong {
+  color: #0a58ca;
+  font-size: 18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #0b1c2d;
+  color: #cfd8dc;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+
+footer strong {
+  color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  section {
+    padding: 45px 15px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+}g" alt="Logo OHM" class="logo">
+    <div>
+      <h1>OHM</h1>
+      <p>Plateforme Digitale Innovante</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#waliid">Wali ID</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
